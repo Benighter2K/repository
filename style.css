@@ -1,0 +1,253 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0 0 55px #03a9f4, 0 0 75px #03a9f4;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #03a9f4, 0 0 40px #03a9f4, 0 0 55px #03a9f4, 0 0 75px #03a9f4;
+  }
+}
+
+
+a {
+  color: #5F5F5F;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #FB7F00;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1em;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #FB7F00;
+  color: #fff;
+}
+
+/* Main */
+main {
+  margin-top: 5em;
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+section li {
+  flex: 0 0 calc(33.33% - 1em);
+  margin-bottom: 1em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+section li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+section img {
+  height: 200px;
+  object-fit: cover;
+}
+
+section h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+section p {
+  margin-top: 0.5em;
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+label, input, textarea {
+  margin-bottom: 1em;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+  position: relative;
+  overflow: hidden;
+  }
+  
+  button[type="submit"]:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #fb8e00;
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  button[type="submit"]:hover:before {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(45deg) scale(2);
+  }
+  
+  button[type="submit"]:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  color: #fb7900;
+  }
+
+
+  
+  #portfolio li {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out;
+  }
+  
+
+  
+  #portfolio li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  #portfolio li:hover::before {
+    opacity: 1;
+  }
+  
+  #portfolio li img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  @media (max-width: 768px) {
+    #portfolio li {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  h4 {
+    text-align: center;
+    text-decoration: double;
+  }
+
+  p {
+    align-items: flex-end;
+    font-size: 20px;
+
+  }

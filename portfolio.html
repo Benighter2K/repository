@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" download>Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <h1>Welcome to my portfolio</h1>
+    </section>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a jack-of-all-trades when it comes to digital skills. From coding and programming to creative writing, I can do it all! I am a master of transcription, capturing every word with precision and accuracy. My artistic talents shine through in my web designs, where I blend aesthetics with functionality. My academic writing skills are second to none, and my content writing and copywriting abilities will captivate and engage your audience. As a web developer, I am proficient in HTML, CSS, and JavaScript, and I take pride in building websites that are not only beautiful but also easy to use. Let me bring my diverse skill set to your next project!.</p>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>This three images in the bottom, They are some of the AI Art I created</p>
+      <ul>
+        <li>
+          <img src="Benighter_Beautiful_girl_black_with_beautiful_blue_eyes_in_an_o_1e66284d-24f9-4b58-9ea1-18a47ea7fc38.png" alt="Project 1">
+          <h3>Project 1</h3>
+        </li>
+        <li>
+          <img src="Benighter_A_Knight_with_blue_eyes_inside_a_helmet_on_a_horse_ca_9e42e78f-0fdf-4680-8866-2f19102667bb.png" alt="Project 2">
+          <h3>Project 2</h3>
+        </li>
+        <li>
+          <img src="Benighter_A_Knight_with_blue_eyes_inside_a_helmet_on_a_horse_ca_24bd01f2-4d11-414b-9f99-e2e77dadbb2a.png" alt="Project 3">
+          <h3>Project 3</h3>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <form action="send_email.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright © My Portfolio 
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
